@@ -14,7 +14,7 @@ const client = new Client({
     partials: ["USER", "CHANNEL", "GUILD_MEMBER", "MESSAGE", "REACTION"]
 });
 
-client.login(""); // remplacer par le token du bot
+client.login("process.env.TOKEN"); // remplacer par le token du bot
 client.commands = new Collection();
 
 const { GiveawaysManager } = require('discord-giveaways');
